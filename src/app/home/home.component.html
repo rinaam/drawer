@@ -1,0 +1,26 @@
+<div class="page-wrapper">
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci rem quas,
+    temporibus nemo dolores magni nobis asperiores quam deleniti delectus dicta,
+    totam blanditiis voluptas error amet similique sint voluptatem illo eum
+    architecto. Accusantium, laboriosam vel. Animi quia beatae nobis placeat,
+    nostrum temporibus aut exercitationem laborum labore pariatur facilis rem
+    dolor!
+  </p>
+  <button (click)="openDrawer()" class="btn">Open</button>
+  <app-drawer
+    [isOpen]="isDrawerOpen"
+    #exportedDrawer="drawer"
+    (isOpenChange)="isDrawerOpen = $event"
+  >
+    <div class="btn-wrapper">
+      <button class="close-btn" (click)="exportedDrawer.close()">Close</button>
+    </div>
+
+    <p title>Title</p>
+    <p body>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor fugiat,
+      quia soluta distinctio cupiditate quo impedit animi molestiae magni porro!
+    </p>
+  </app-drawer>
+</div>

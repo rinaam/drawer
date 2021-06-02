@@ -1,0 +1,29 @@
+:host {
+  --closed-width: 0px;
+  --open-width: 400px;
+}
+.drawer-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: var(--closed-width);
+  background-color: #fff;
+  height: 100vh;
+  transition: all 400ms ease-in-out;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.isOpen {
+  width: var(--open-width);
+}
+.content {
+  padding: 12px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.body {
+  line-height: 1.5;
+}
